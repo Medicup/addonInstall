@@ -1,0 +1,7 @@
+#!/bin/bash
+#This script allows for initial install of software modules
+#Author: Stephen J Kennedy
+#version 1.0
+#DEBUG used with -x (reports shell name, line number, and associated function)
+PS4='+ $BASH_SOURCE : $LINENO : ${FUNCNAME[0]} ()'
+
