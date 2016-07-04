@@ -4,12 +4,10 @@
 #version 1.0
 #DEBUG used with -x (reports shell name, line number, and associated function)
 PS4='+ $BASH_SOURCE : $LINENO : ${FUNCNAME[0]} ()'
-ADDONLIST="htop"
+ADDONLIST="htop vim mailutil"
 
-for CASE in $ADDONLIST
+for ADDONS in $ADDONLIST
 do 
-  case $CASE)
-    echo "apt-get install ${CASE}"
-    ;;
-  esac
+    echo "apt-get install ${ADDONS}" || exit 1
 done
+exit 0
