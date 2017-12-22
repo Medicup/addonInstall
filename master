@@ -4,7 +4,7 @@
 #version 1.0
 #DEBUG used with -x (reports shell name, line number, and associated function)
 PS4='+ $BASH_SOURCE : $LINENO : ${FUNCNAME[0]} ()'
-ADDONLIST="htop vim mailutil"
+ADDONLIST="htop vim dnsutils ccze iftop curl openssh-client"
 
 for ADDONS in $ADDONLIST
 do 
